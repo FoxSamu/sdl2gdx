@@ -1,7 +1,3 @@
-# Advert
-
-[RetroWar: 8-bit Party Battle](https://store.steampowered.com/app/664240/RetroWar_8bit_Party_Battle/?git) is out now.  Defeat up to 15 of your friends in a tournament of 80s-inspired retro mini games.
-
 # sdl2gdx (Java SDL & GDX Controllers)
 
 ## What
@@ -31,18 +27,16 @@ Compared to the default LibGDX Controller implementation:
 Add the repo if you don't have it in your build.gradle already
 
 ```diff
-buildscript{
-    repositories {
-+        jcenter()
-    }
+repositories {
++   maven { url = uri("https://maven.shadew.net/") }
+}
 ```
 
 ### For a project not using LibGDX
 
 ```diff
-    dependencies {
-+       compile "uk.co.electronstudio.sdl2gdx:sdl2gdx:1.0.+"
-    }
+dependencies {
++   implementation("uk.co.electronstudio.sdl2gdx:sdl2gdx:1.0.4")
 }
 ```
 
